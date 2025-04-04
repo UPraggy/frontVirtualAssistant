@@ -1,0 +1,217 @@
+/* MOVIMENTAÇÂO CARDS */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter:wght@400;600&display=swap');
+
+.chatTour{
+    position: relative;
+    background-color: var(--black-red-Chatvar-color);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    max-height: 100vh;
+    height: 100svh;
+    max-height: 100svh;
+    overflow-y: hidden;
+}
+
+
+/* CHAT CONTENT */
+.chatTour .chatContent{
+    position: absolute;
+    width: 100%;
+    z-index: 15;
+    height: 100vh;
+    max-height: 100vh;
+    height: 100svh;
+    max-height: 100svh;
+    overflow-y: hidden;
+}
+
+
+.chatTour .chatContent .top{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 15px 5%;
+    max-height: 15vh;
+}
+
+
+.chatTour .chatContent .topTitle{
+    color: var(--white-color);
+    font-family: 'FuturaHeavy', 'serif';
+    font-size: 2em;
+    font-weight: 500;
+    user-select: none;
+}
+
+
+
+.chatTour .chatContent .topLogo{
+    background: url('../imgs/bhIcon.png') no-repeat center/contain;
+    user-select: none;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 18px auto;
+    user-select: none;
+}
+
+
+.chatTour .chatContent .topTitle {
+    text-align: center;
+    font-family: "Nephilm", sans-serif;
+}
+
+
+.chatTour .chatContent .centerPage{
+    width: 100%;
+    height: calc(92vh - 30px);
+    margin: 0 auto;
+    color: var(--white-color);  
+    font-family: "Poppins", sans-serif;
+
+    user-select: none;
+}
+
+.chatTour .chatContent .chatbox{
+    position: relative;
+    z-index: 8;
+    width: 60%;
+    height: calc(80vh - 90px - 3rem);
+    max-height: calc(80vh - 90px - 3rem);
+    overflow: auto;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
+.chatTour .chatPopUp{
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px 20px;
+    margin: 22px 0;
+    border: 2px solid var(--white-color);
+    border-radius: 10px;
+    word-wrap: break-word;
+    user-select: text;
+    position: relative;
+    z-index: 8;
+}
+
+
+.chatTour .chatPopUp.userMessage{
+    background-color: var(--gray-escuro-color);
+    margin: 22px 0 22px auto;
+    text-align: end;
+}
+
+.chatTour .chatPopUp.assistantMessage{
+    background-color: var(--blue-light-color);
+}
+
+.chatTour .chatPopUp.GuideConversation{
+    background-color: var(--gray-escuro2-color);
+}
+
+
+
+
+
+
+
+/* SEND BOX INPUT USER */
+.chatTour .sendBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+}
+
+.chatTour .userInput {
+    background-color: var(--blue-superlight-color);
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    outline: none;
+    width: 50%;
+    color: var(--white-color);
+    border-radius: 0.5rem; /* rounded-lg */
+    border-width: 2px;
+    border-style: solid;
+    transition: all 100ms ease-in-out; /* transition-colors duration-100 */
+    border-color: var(--white-color); /* border-[#2B3040] */
+  }
+  
+  .chatTour .userInput:focus {
+    border-color: #87a1e4; /* focus:border-[#596A95] */
+  }
+
+  
+  .chatTour .userInput::placeholder {
+    color: var(--white-color); /* Cor desejada para o placeholder */
+    opacity: 1; /* Opacidade, se necessário */
+  }
+  
+
+  .chatTour .arrow-component{
+    line-height: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--blue-light-color);
+  }
+  
+  .chatTour svg {
+        width: 50px;
+        height: auto;
+        padding: 15px 20px 15px 10px;
+    }
+
+.chatTour .arrow-icon {
+	path:nth-child(2) {
+		d: path('M14.5 4H3.5H4');
+	}
+	
+	path {
+		transition: 0.25s ease;
+	}
+	
+	&:hover {
+		path:nth-child(1) {
+			d: path('M15 4H4V4');
+		}
+		
+		path:nth-child(2) {
+			d: path('M14.5 4H3.5H0');
+			transform: translateX(4px);
+		}
+		
+		path:nth-child(3) {
+			transform: translateX(4px);
+		}
+	}
+}
+  
+@media(max-width: 767px){
+
+    .chatTour .chatContent{
+        position: absolute;
+        width: 100%;
+        height: 100svh;
+        z-index: 15;
+    }
+
+    .chatTour{
+        justify-content: flex-start;
+    }
+
+}
+
+
+

@@ -1,0 +1,116 @@
+/* QUEST  */
+.chatTour .questBtn{
+    width: 50px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: url('../imgs/questBtn.png') no-repeat center/contain;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.chatTour .questChatTourContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: calc(30px + 4.2rem);
+    width: 100%;
+    height: calc(80vh - 90px - 3rem);
+    max-height: calc(80vh - 90px - 3rem);
+    z-index: 10;
+}
+
+.chatTour .questChatTourContent .questChatTourBox{
+    width: 55%;
+    height: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    border-radius: 5px 5px 0px 0;
+    height: calc(80vh - 90px - 3rem);
+    max-height: calc(80vh - 90px - 3rem);
+}
+
+.chatTour .questChatTourContent .title{
+    color: var(--blue-dark-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+/* ICONS */
+.chatTour .questChatTourContent .icons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 7px 5px;
+    justify-content: center;
+    color: var(--blue-dark-color);
+    margin: 0 auto;
+}
+
+.chatTour .questChatTourContent .iconsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.chatTour .questChatTourContent .icons .museu .icon{
+    width: 50px;
+    aspect-ratio: 1/1;
+    background: url('../imgs/questChatTour/MuseumClickable.png') no-repeat center/contain;
+    cursor: pointer;
+}
+
+
+
+
+/* QUESTION OPTION SELECTED */
+.chatTour .questChatTourContent .perguntas {
+    overflow-y: auto;
+    height: calc(100% - 1.4em - 62px);
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: var(--blue-dark-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.chatTour .questChatTourContent .divisorperguntaSelected{
+    width: 80%;
+    margin: 10px auto;
+    height: 2px;
+    background-color: var(--blue-dark-color);
+}
+
+@media(max-width: 767px){
+
+    .chatTour .questBtn {
+        width: 50px;
+        top: 16px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+
+    .chatTour .questChatTourContent .questChatTourBox{
+        width: 80%;
+    }
+
+    /* ICONS */
+    .chatTour .questChatTourContent .icons{
+        margin-top: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

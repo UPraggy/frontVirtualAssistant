@@ -1,0 +1,212 @@
+/* MOVIMENTAÇÂO CARDS */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter:wght@400;600&display=swap');
+
+.homePage{
+    position: relative;
+    background-color: var(--white-color);
+    z-index: 1;
+}
+
+.homePage .roudBackGradient{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: url('../imgs/back4100px.jpg') no-repeat center/cover;
+}
+
+
+.homePage .homeContent{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+}
+
+
+.homePage .homeContent .top,
+.homePage .homeContent .topTMP{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    padding: 15px 5%;
+    height: 8vh;
+}
+
+.homePage .homeContent .topTMP{
+    position: relative;
+}
+
+.homePage .homeContent .topTitle{
+    color: var(--white-color);
+    font-family: 'FuturaHeavy', 'serif';
+    font-size: 2em;
+    font-weight: 500;
+    user-select: none;
+}
+
+
+
+.homePage .homeContent .topLogo{
+    background: url('../imgs/bhIcon.png') no-repeat center/contain;
+    user-select: none;
+}
+
+
+.homePage .homeContent .top .loginBtns{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Poppins", sans-serif;
+    color: var(--white-color);
+    user-select: none;
+}
+
+
+.homePage .homeContent .top .loginBtns .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    aspect-ratio: 3/1;
+    text-align: center;
+    margin-right: 30px;
+    padding: 4px 15px;
+    border: 3px solid var(--blue-light-color);
+    cursor: pointer;
+}
+
+.homePage .homeContent .top .loginBtns .register{
+    height: 50%;
+    aspect-ratio: 3/1;
+    text-align: center;
+    margin-right: 10px;
+    padding: 7px 18px;
+    background-color: var(--blue-dark-color);
+    cursor: pointer;
+}
+
+.homePage .homeContent .centerPage{
+    width: 90%;
+    height: 89vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white-color);
+    font-family: 'FuturaLight', sans-serif;
+    font-size: 3em;
+    user-select: none;
+}
+
+.homePage .homeContent .centerPage span{
+    font-family: 'FuturaHeavy', sans-serif;
+}
+
+.homePage .homeContent .centerPage .imageCenter{
+    height: 80%;
+    background: url('../imgs/bhCityCut4100px.jpg') no-repeat center/contain;
+}
+
+
+
+@media(max-width: 767px){
+    .homePage{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .homePage .roudBackGradient{
+        height: 45vh;
+        z-index: 10;
+        top: 0;
+        background: url('../imgs/bhCity400px.jpg') no-repeat center/cover;
+    }
+
+    .homePage .homeContent{
+        height: 65vh;
+        background: var(--black-red-color);
+        background: url('../imgs/back500px.jpg') no-repeat center/cover;
+        padding: 15px 0 0 0;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .homePage .homeContent .top,
+    .homePage .homeContent .topTMP{
+        grid-template-columns: 100%;
+        justify-content: center;
+        position: relative;
+        top: initial;
+        height: auto;
+    }
+
+    .homePage .homeContent .topTMP{
+        display: none;
+    }
+
+    .homePage .homeContent .topLogo {
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto 18px auto;
+        user-select: none;
+    }
+
+    .homePage .homeContent .topTitle {
+        text-align: center;
+        font-family: "Nephilm", sans-serif;
+    }
+
+    .homePage .homeContent .centerPage {
+        display: grid;
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .homePage .homeContent .centerPage {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .homePage .homeContent .loginBtns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white-color);
+        margin-top: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1em;
+        user-select: none;
+    }
+
+    .homePage .homeContent .loginBtns > div{
+        height: auto;
+        width: 70%;
+        aspect-ratio: auto;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
+    .homePage .homeContent .loginBtns .login{
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: 3px solid var(--blue-light-color);
+        margin-top: 25px;
+    }
+    
+    .homePage .homeContent .loginBtns .register {
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        background-color: var(--blue-dark-color);
+    }
+}
+
+
+
