@@ -1,0 +1,80 @@
+/* MOVIMENTAÇÂO CARDS */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter:wght@400;600&display=swap');
+
+.chatTour .chatPopUp.cardSpaceLista.cardSpaceListaAtivo{
+    max-width: 40%;
+    width: 40%;
+    background-color: var(--gray-escuro2-color);
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceNome{
+    width: 90%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceEndereco,
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceHorario,
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceMoreInfo{
+    width: 95%;
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-size: 1.2em;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceHorario,
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceMoreInfo{
+    margin-top: 0px;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .cardSpaceImg {
+    width: 70%;
+    aspect-ratio: 1/1;
+    border: 3px solid var(--white-color);
+    border-radius: 5px;
+    margin: 25px 0 15px 0;
+}
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .infoPrice{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 5px 0;
+}
+
+
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .infoPrice .cardSpaceTel{
+    font-size: 1.3em;
+}
+.chatTour .chatPopUp.cardSpaceListaAtivo .cardSpace .infoPrice .cardSpacePreco{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+  
+@media(max-width: 767px){
+
+
+}
+
+
+
